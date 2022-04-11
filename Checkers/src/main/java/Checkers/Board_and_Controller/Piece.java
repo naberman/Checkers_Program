@@ -1,9 +1,9 @@
 package Checkers.Board_and_Controller;
 
 public interface Piece {
-    int getXLocation();
-    int getYLocation();
-    boolean movePiece(int xLocation, int ylocation);
+    enum Color{RED, BLACK};
+    int[] getLocation();
+    boolean movePiece(int[] location);
     boolean isKing();
     boolean promote();
     boolean isRed();
