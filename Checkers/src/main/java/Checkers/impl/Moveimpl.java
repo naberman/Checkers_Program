@@ -5,7 +5,7 @@ public class Moveimpl implements Move  {
     private int[]StartLocation;
     private int[]EndLocation;
     private int score;
-    public Moveimpl(int[] StartLocation,int[] EndLocation){
+    public Moveimpl(int[] StartLocation,int[] EndLocation){// format array[0]=x array[1]= y 
         score=0;
         for (int i=0; i<2;i++){
             this.StartLocation[i] =StartLocation[i];
@@ -43,7 +43,7 @@ public class Moveimpl implements Move  {
     @Override
     public int getMoveScore() {
         int temp = score;
-        return score;
+        return temp;
     }
 
     @Override
