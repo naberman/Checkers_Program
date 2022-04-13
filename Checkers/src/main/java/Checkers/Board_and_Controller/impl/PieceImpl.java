@@ -1,6 +1,8 @@
-package Checkers.Board_and_Controller;
+package Checkers.Board_and_Controller.impl;
 
-public class PieceImpl implements Piece{
+import Checkers.Board_and_Controller.Piece;
+
+public class PieceImpl implements Piece {
     private Piece.Color color;
     private int[] location;
     private boolean isKing;
