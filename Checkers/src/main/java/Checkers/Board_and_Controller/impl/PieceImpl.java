@@ -32,14 +32,6 @@ public class PieceImpl implements Piece {
         return isKing;
     }
 
-    @Override
-    public boolean promote() {
-        if(!this.isKing){
-            this.isKing = true;
-            return true;
-        }
-        return false;
-    }
 
     @Override
     public boolean isRed() {
