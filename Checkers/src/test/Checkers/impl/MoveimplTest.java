@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class MoveimplTest {
 
     @Test
-    public void getStartingLocation() {
+    public void getStartingLocationtest() {
         int [] start ={1,1};
         int[] end = {2,2};
         Move m = new Moveimpl(start,end,42);
