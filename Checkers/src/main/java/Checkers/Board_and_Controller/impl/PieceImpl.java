@@ -15,6 +15,7 @@ public class PieceImpl implements Piece {
     }
 
 
+
     @Override
     public int[] getLocation() {
         return this.location;

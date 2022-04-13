@@ -12,7 +12,7 @@ public class Moveimpl implements Move  {
             this.EndLocation[i]=EndLocation[i];
         }
     }
-    public Moveimpl(int[] StartLocation,int[] EndLocation,int Score){
+    public Moveimpl(int[] StartLocation,int[] EndLocation,double Score){
         this.score=Score;
         for (int i=0; i<2;i++){
             this.StartLocation[i] =StartLocation[i];
