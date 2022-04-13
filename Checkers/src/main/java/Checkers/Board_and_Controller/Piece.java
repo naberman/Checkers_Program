@@ -5,6 +5,5 @@ public interface Piece {
     int[] getLocation();
     boolean movePiece(int[] location);
     boolean isKing();
-    boolean promote();
     boolean isRed();
 }
