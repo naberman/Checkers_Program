@@ -1,10 +1,10 @@
-package impl;
+package Checkers.impl;
 import Checkers.Board_and_Controller.Piece;
 import Checkers.Move;
 public class Moveimpl implements Move  {
     private int[]StartLocation;
     private int[]EndLocation;
-    private int score;
+    private double score;
     public Moveimpl(int[] StartLocation,int[] EndLocation){// format array[0]=x array[1]= y 
         score=0;
         for (int i=0; i<2;i++){
@@ -38,11 +38,14 @@ public class Moveimpl implements Move  {
         return temp;
     }
 
-
+    @Override
+    public void setMoveScore(double score){
+        this.score = score;
+    }
 
     @Override
-    public int getMoveScore() {
-        int temp = score;
+    public double getMoveScore() {
+        double temp = score;
         return temp;
     }
 
